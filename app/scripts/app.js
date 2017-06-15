@@ -40,6 +40,6 @@ angular
         controllerAs: 'ng2'
       })
       .otherwise({
-        redirectTo: '/'
+        template: 'Not Found'
       });
   });
