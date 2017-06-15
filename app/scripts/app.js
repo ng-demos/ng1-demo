@@ -32,13 +32,5 @@ angular
         templateUrl: 'views/about.html',
         controller: 'AboutCtrl',
         controllerAs: 'about'
-      })
-      .when('/new', {
-        templateUrl: 'views/ng2.html',
-        controller: 'Ng2Ctrl',
-        controllerAs: 'ng2'
-      })
-      .otherwise({
-        template: 'Not Found'
       });
   });

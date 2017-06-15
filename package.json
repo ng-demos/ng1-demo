@@ -34,6 +34,7 @@
   },
   "scripts": {
     "start": "grunt serve",
+    "build": "grunt build && rm -fr ../ng2-demo/src/assets/ng1 && cp -r dist ../ng2-demo/src/assets/ng1",
     "test": "karma start test/karma.conf.js"
   }
 }
