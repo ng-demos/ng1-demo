@@ -19,6 +19,7 @@ angular
   ])
   .config(function ($routeProvider, $locationProvider) {
     $locationProvider.hashPrefix('');
+    $locationProvider.html5Mode(true);
     $routeProvider
       .when('', {
         redirectTo: '/',
@@ -33,7 +34,7 @@ angular
         controller: 'AboutCtrl',
         controllerAs: 'about'
       })
-      .when('/ng2', {
+      .when('/new', {
         templateUrl: 'views/ng2.html',
         controller: 'Ng2Ctrl',
         controllerAs: 'ng2'
