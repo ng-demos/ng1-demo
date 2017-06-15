@@ -17,8 +17,12 @@ angular
     'ngSanitize',
     'ngTouch'
   ])
-  .config(function ($routeProvider) {
+  .config(function ($routeProvider, $locationProvider) {
+    $locationProvider.hashPrefix('');
     $routeProvider
+      .when('', {
+        redirectTo: '/',
+      })
       .when('/', {
         templateUrl: 'views/main.html',
         controller: 'MainCtrl',
